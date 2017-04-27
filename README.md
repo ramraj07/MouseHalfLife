@@ -35,40 +35,42 @@ file should contain only a single table of the form:
  they are "grouped" for the report.
 
 
-ExperimentTitle = 'Pka in KO and GKO 03.27.10';
-ExperimentDescription = '';
+     ExperimentTitle = 'Pka in KO and GKO 03.27.10';
+     ExperimentDescription = '';
  Provide description of the experiment, be as elaborate as you want
 
-ExperimentDate = '03-27-10';
-ExperimenterName=  '';
+     ExperimentDate = '03-27-10';
+     ExperimenterName=  '';
 
-CorrectBackground = 'no';
+     CorrectBackground = 'no';
  If there is background correction to be done, enter 'no'. Otherwise enter
  'yes'.
 
-IsotopeHalfLife =1430.4;
- In hours (or whatever time unit used in the data
+     IsotopeHalfLife =1430.4;
+In hours (or whatever time unit used in the data
 
-TimeUnits = 'hours';
+     TimeUnits = 'hours';
 
-AutomaticInitialConditions = 'yes';
+     AutomaticInitialConditions = 'yes';
  If you want initial conditions to be determined automatically, put 'yes'.
  Otherwise put 'no' and provide values for the conditions below. If
  single-exponential fitting method is used only the HalfLife1 and Coeff1
  values will be utilized.
 
-InitialConditions_HalfLife1 = 20;
-InitialConditions_HalfLife2 = 220;
-InitialConditions_Coeff1 = 0.03;
-InitialConditions_Coeff2 = 0.003;
+     InitialConditions_HalfLife1 = 20;
+     InitialConditions_HalfLife2 = 220;
+     InitialConditions_Coeff1 = 0.03;
+     InitialConditions_Coeff2 = 0.003;
 
 
  BEST DEFAULT FITTING METHOD: 2
-fittingMethod = 1;
+ 
+     fittingMethod = 1;
+       
  There are three fitting methods you can use, and you choose by putting
  1,2 or 3 above. The explanations for them are:
 
- 1 = Independent-coefficient biexponential fit
+ 1 = Independent-coefficient biexponential fit 
        In this method the equation used is,
            y = C1*exp(-k1*t)+C2*exp(-k2*t)
        This is the traditionally used method, where you expect the curve

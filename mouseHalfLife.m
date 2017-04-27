@@ -6,7 +6,7 @@ function mouseHalfLife
 %in the prescribed format. Output is a PDF with all the fitting data and
 %calculated half-lives.
 
-dataFilename= 'PkainKOandGKO03.27.10.csv';
+dataFilename= 'lsfdata.csv';
 %Enter the name of the csv file that contains the half-life data in the
 %prescribed format. CSV is a special data-only format you can save in excel; the
 %file should contain only a single table of the form:

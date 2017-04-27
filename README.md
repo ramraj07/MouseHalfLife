@@ -71,12 +71,14 @@ In hours (or whatever time unit used in the data
  1,2 or 3 above. The explanations for them are:
 
  1 = Independent-coefficient biexponential fit 
+ 
        In this method the equation used is,
            y = C1*exp(-k1*t)+C2*exp(-k2*t)
        This is the traditionally used method, where you expect the curve
        to follow a biexponential curve. k1 and k2 are the half lives.
 
  2 = Semi-dependent-coefficient biexponential fit
+ 
        The equation used in this method is,
            y = 0.001*(C1*C2*exp(-k1*t)+C1*(100-C2)exp(-k2*t))
        While this equation might look different, it means exactly the same
@@ -90,6 +92,7 @@ In hours (or whatever time unit used in the data
        landscape)
 
  3 = Single exponential fit
+ 
        The equation used here is,
            y = C*exp(-k*t)
        This should be used in special cases where the decay looks more
